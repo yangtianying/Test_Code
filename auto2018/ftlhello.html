@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>娴嬭瘯鎶ュ憡</h1>
+	<br>
+            小米1
+            小米2
+            小米3
+            <br>
+            鑾峰彇褰撳墠杩唬鐨勭储寮?
+                0
+                1
+                2
+
+    <br>
+
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+-----------------------------------------
+//瀛楃涓?
+世界你好
+<br>
+-----------------------------------------
+//瀵硅薄鏁版嵁
+
+Expression student is undefined on line 38, column 3 in freemarker.html.
+Quoting problematic instruction:
+----------
+==> ${student} [on line 38, column 1 in freemarker.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.template.InvalidReferenceException: Expression student is undefined on line 38, column 3 in freemarker.html.
+	at freemarker.template.TemplateObject.assertNonNull(TemplateObject.java:125)
+	at freemarker.template.Expression.getStringValue(Expression.java:117)
+	at freemarker.template.Expression.getStringValue(Expression.java:92)
+	at freemarker.template.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.template.Environment.visit(Environment.java:180)
+	at freemarker.template.MixedContent.accept(MixedContent.java:91)
+	at freemarker.template.Environment.visit(Environment.java:180)
+	at freemarker.template.Environment.process(Environment.java:166)
+	at freemarker.template.Template.process(Template.java:238)
+	at com.webtest.core.FreemarkerDemo.test(FreemarkerDemo.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)

@@ -1,0 +1,4 @@
+[ERROR] 2018-10-12 09:59:17,882 com.webtest.utils.Log - com.webtest.demo.Front_Login_Test@342c38f8-testLogin运行失败，需要截屏
+[ERROR] 2018-11-19 14:18:29,562 com.webtest.utils.Log - com.webtest.demo.Front_Login_Test@1de76cc7-LoginFailed运行失败，需要截屏
+[ERROR] 2018-11-20 14:12:15,985 com.webtest.utils.Log - com.webtest.demo.Demo@528931cf-test2运行失败，需要截屏
+[ERROR] 2018-11-20 14:12:16,004 com.webtest.utils.Log - com.webtest.demo.Demo@528931cf-test2运行失败，需要截屏
