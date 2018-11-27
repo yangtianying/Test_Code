@@ -28,12 +28,14 @@ public class WebTestListener extends TestListenerAdapter {
 //		WebDriver driver = tb.getDriver();
 //		SeleniumScreenShot ss = new SeleniumScreenShot(driver);
 //		ss.screenShot();
-//
+
 //	}
 
 	@Override
 	public void onFinish(ITestContext testContext) {
+
 		List<ITestResult> failedList1 = this.getFailedTests();
+		System.out.println("fail:" + this.getFailedTests().size());
 		List<ITestResult> passedList1 = this.getPassedTests();
 
 		List<String> failedList2 = new ArrayList();
@@ -60,13 +62,13 @@ public class WebTestListener extends TestListenerAdapter {
 		Result.put("failedNum", failedList1.size());
 		Result.put("passedList2", passedList2);
 		Result.put("failedList2", failedList2);
+		Result.put("Num", passedList1.size() + failedList1.size());
 		Result.put("curTime", new Date());// 时间格式
 
 		// 调用FreemakerTemplateEngine run方法 把result 转化为String 作为邮件的正文
 		try {
 			String content = ft.run(Result);
-//			System.out.println("我的测试");
-
+			System.out.println("我的测试");
 			System.out.println(content);
 			mail.send(content);
 		} catch (IOException e) {

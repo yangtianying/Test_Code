@@ -16,7 +16,7 @@ public class FreemakerTemplateEngine {
 
 		// 创建一个合适的Configration对象
 		Configuration configuration = new Configuration();
-		String dir = "E:\\Java SourceCode\\JavaEECode\\auto2018\\ftl";
+		String dir = "E:\\JavaEEcode\\Test_Code\\auto2018\\ftl";
 		// 从哪里加载模板文件
 		configuration.setDirectoryForTemplateLoading(new File(dir));
 

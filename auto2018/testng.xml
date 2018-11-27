@@ -4,12 +4,15 @@
 
 	<listeners> 
 		<listener class-name="com.webtest.core.WebTestListener" /> 
+		
 	</listeners>
 
 	<test name="test1">
 		<classes>
-			<class name="com.webtest.demo.Demo" />
-			<class name="com.webtest.demo.Demo2" /> 	
+			<!-- <class name="com.webtest.demo.Demo" />
+			<class name="com.webtest.demo.Demo2" /> --> 	  
+			
+			<class name="com.webtest.demo.Front_Login_Test"/>   
 		</classes>
 		
 	</test>
